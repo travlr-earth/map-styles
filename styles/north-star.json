@@ -23,8 +23,8 @@
     },
     "__ml-contours": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v1.pmtiles",
-      "maxzoom": 8,
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v2.pmtiles",
+      "maxzoom": 9,
       "minzoom": 7,
       "attribution": "Contours: SRTM (NASA/USGS), pre-generated"
     },

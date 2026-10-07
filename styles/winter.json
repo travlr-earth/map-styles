@@ -18,9 +18,9 @@
     },
     "__ml-contours": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v1.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v2.pmtiles",
       "minzoom": 8,
-      "maxzoom": 8
+      "maxzoom": 9
     },
     "__ml-bathymetry": {
       "type": "vector",
