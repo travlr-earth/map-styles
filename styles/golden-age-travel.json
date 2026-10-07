@@ -44,12 +44,12 @@
     },
     "__ml-bathymetry": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/bathymetry-v1.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/bathymetry-v3.pmtiles",
       "attribution": "Bathymetry: Natural Earth"
     },
     "__ml-ne-landcover": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/ne-landcover-v1.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/ne-landcover-v3.pmtiles",
       "minzoom": 0,
       "maxzoom": 7,
       "attribution": "Natural Earth (naturalearthdata.com)"
