@@ -42,7 +42,7 @@
     },
     "__ml-bathymetry": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/bathymetry-v1.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/bathymetry-v3.pmtiles",
       "attribution": "Bathymetry: Natural Earth"
     }
   },
