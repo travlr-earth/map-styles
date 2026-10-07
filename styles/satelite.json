@@ -35,14 +35,14 @@
     },
     "__ml-contours": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/styles/tiles/contours.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v1.pmtiles",
       "maxzoom": 8,
       "minzoom": 8,
       "attribution": "Contours: SRTM (NASA/USGS), pre-generated"
     },
     "__ml-bathymetry": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/styles/tiles/bathymetry.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/bathymetry-v1.pmtiles",
       "attribution": "Bathymetry: Natural Earth"
     }
   },

@@ -33,14 +33,14 @@
     },
     "__ml-contours": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/styles/tiles/contours.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v1.pmtiles",
       "maxzoom": 8,
       "minzoom": 8,
       "attribution": "Contours: SRTM (NASA/USGS), pre-generated"
     },
     "__ml-ne-landcover": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/styles/tiles/ne-landcover.pmtiles",
+      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/ne-landcover-v1.pmtiles",
       "minzoom": 0,
       "maxzoom": 7,
       "attribution": "Natural Earth (naturalearthdata.com)"
