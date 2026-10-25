@@ -51,6 +51,41 @@ const map = new maplibregl.Map({
 | western | 43 |
 | winter | 12 |
 
+## Self-hosted satellite imagery
+
+The `satelite` style currently sources imagery from Esri's ArcGIS World Imagery
+endpoint — the one remaining third-party runtime dependency in an otherwise
+self-hosted stack.
+
+[`planet-satellite/`](./planet-satellite) is a build system that produces a
+replacement from open data (NASA GIBS, Sentinel-2, NASA HLS, NOAA) as a single
+PMTiles archive that MapLibre reads directly — globe projection included.
+
+A complete cloud-free world at z0–z8 takes about an hour:
+
+```bash
+cd planet-satellite
+planet-satellite build -p configs/global-lite.yaml
+planet-satellite serve data/output --open
+```
+
+For every zoom level, `global-highres` stacks GIBS (z0–z8), HLS at 30 m
+(z9–z12) and Sentinel-2 at 10 m (z13–z14) into one archive with no gaps; z14 is
+the honest ceiling for open data. `global-highres-nokey` reaches the same span
+using only sources that need no account at all. Large builds split across
+machines with `--shard i/N`, and regional Sentinel-2 overlays merge onto a
+global base with feathered alpha.
+
+Swap it into a style in place:
+
+```bash
+planet-satellite patch-style ../styles/satelite.json   --archive data/output/planet-satellite.pmtiles   --url    https://cdn.example.com/planet-satellite.pmtiles
+```
+
+See the [README](./planet-satellite/README.md) for the workflow and
+[LIMITATIONS.md](./planet-satellite/LIMITATIONS.md) for an honest account of
+where open data stops short of commercial imagery.
+
 ## Machine-readable index
 
 [`index.json`](./index.json) lists all styles with id, name, and layer count.
