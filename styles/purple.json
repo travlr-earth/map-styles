@@ -25,26 +25,26 @@
     },
     "__ml-contours": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/contours-v2.pmtiles",
+      "url": "pmtiles://https://tiles.travlr.earth/overlays/contours-v2.pmtiles",
       "maxzoom": 9,
       "minzoom": 8,
       "attribution": "Contours: SRTM (NASA/USGS), pre-generated"
     },
     "__ml-bathymetry": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/bathymetry-v3.pmtiles",
+      "url": "pmtiles://https://tiles.travlr.earth/overlays/bathymetry-v3.pmtiles",
       "attribution": "Bathymetry: Natural Earth"
     },
     "__ml-ne-landcover": {
       "type": "vector",
-      "url": "pmtiles://https://travlr-tiles.matsmiersen.workers.dev/overlays/ne-landcover-v3.pmtiles",
+      "url": "pmtiles://https://tiles.travlr.earth/overlays/ne-landcover-v3.pmtiles",
       "minzoom": 0,
       "maxzoom": 7,
       "attribution": "Natural Earth (naturalearthdata.com)"
     }
   },
-  "sprite": "https://travlr-tiles.matsmiersen.workers.dev/styles/purple/sprite/sprite",
-  "glyphs": "https://travlr-tiles.matsmiersen.workers.dev/styles/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://tiles.travlr.earth/styles/purple/sprite/sprite",
+  "glyphs": "https://tiles.travlr.earth/styles/fonts/{fontstack}/{range}.pbf",
   "projection": {
     "type": "globe"
   },
