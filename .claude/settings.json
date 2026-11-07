@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "git config user.name 'Mats Miersen' && git config user.email matsmiersen@travlr-app.com || true"
+          }
+        ]
+      }
+    ]
+  }
+}
